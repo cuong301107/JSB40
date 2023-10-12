@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1+1=4</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      /* để cho 2 khối đó nằm ngang hàng nhau thì cần dùng display: inline-block cho class line1 và class line2, nếu 2 khối đó sau khi dùng 
+      display mà vẫn bị lệch hàng thì có thể dùng vertical-algin: top */
+      .line1 {
+        width: 250px;
+        height: 250px;
+        border: 1px solid white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        display: inline-block;
+      }
+
+      .square {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(81, 141, 81);
+        margin: 50px auto 0px;
+        text-align: center;
+        line-height: 100px;
+      }
+
+      .line2 {
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        border: 1px solid white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+
+      .square {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(41, 101, 150);
+        margin: 50px auto 0px;
+        text-align: center;
+        line-height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="line1">
+      <div class="square">FD</div>
+      <h2>Principle of Operation System CLC (62FIT2POP)</h2>
+    </div>
+
+    <div class="line2">
+      <div class="square">PCO</div>
+      <h2>Principle of computing</h2>
+    </div>
+  </body>
